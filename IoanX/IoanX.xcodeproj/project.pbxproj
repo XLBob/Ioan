@@ -61,7 +61,6 @@
 			children = (
 				1314E9131E7562AC00F729C2 /* IoanX */,
 				1314E9281E7562AC00F729C2 /* IoanXTests */,
-				1314E9121E7562AC00F729C2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +71,7 @@
 				1314E9251E7562AC00F729C2 /* IoanXTests.xctest */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		1314E9131E7562AC00F729C2 /* IoanX */ = {
@@ -90,6 +90,7 @@
 		1314E9281E7562AC00F729C2 /* IoanXTests */ = {
 			isa = PBXGroup;
 			children = (
+				1314E9121E7562AC00F729C2 /* Products */,
 				1314E9291E7562AC00F729C2 /* IoanXTests.swift */,
 				1314E92B1E7562AC00F729C2 /* Info.plist */,
 			);

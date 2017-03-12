@@ -9,6 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var loanAmount: UITextField!
+    @IBOutlet weak var year: UITextField!
+    @IBOutlet weak var interest: UITextField!
+    @IBOutlet weak var result: UILabel!
+    
+    @IBAction func calculate(_ sender: Any) {
+        let calculate1:simpleCalculate = simpleCalculate()
+        result.text = calculate1.simpleCalcute(loanAmount: Double(loanAmount.text!)!, year: Int(year.text!)!, interest: Double(interest.text!)!)
+    }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,5 +32,11 @@ class ViewController: UIViewController {
     }
 
 
+    class simpleCalculate {
+        func simpleCalcute(loanAmount:Double,year:Int,interest:Double)->String{
+            return String(loanAmount*Double(year)*interest)
+        }
+    }
+    
 }
 
