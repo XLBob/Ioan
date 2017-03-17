@@ -156,7 +156,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1314E90C1E7562AB00F729C2 /* Build configuration list for PBXProject "IoanX" */;
+			buildConfigurationList = 1314E90C1E7562AB00F729C2 /* Build configuration list for PBXProject "loanX" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -391,7 +391,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1314E90C1E7562AB00F729C2 /* Build configuration list for PBXProject "IoanX" */ = {
+		1314E90C1E7562AB00F729C2 /* Build configuration list for PBXProject "loanX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1314E92C1E7562AC00F729C2 /* Debug */,
@@ -407,6 +407,7 @@
 				1314E9301E7562AC00F729C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1314E9311E7562AC00F729C2 /* Build configuration list for PBXNativeTarget "IoanXTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +416,7 @@
 				1314E9331E7562AC00F729C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -21,6 +21,11 @@ class ViewController: UIViewController {
         result.text = calculate1.simpleCalcute(LoanAmount: Double(loanAmount.text!)!, years: Int (year.text!)!, interestRate: Double(interest.text!)!).description
     }
 
+    @IBAction func compoundCalculateField(_ sender: Any) {
+    let calculate2:compoundCalculate = compoundCalculate()
+     result.text = calculate2.calculate(LoanAmount: Double(loanAmount.text!)!, years: Int (year.text!)!, interestRate: Double(interest.text!)!).description
+}
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,5 +46,11 @@ class ViewController: UIViewController {
     }
     
 }
+    class compoundCalculate {
+        func calculate(LoanAmount:Double,years:Int,interestRate:Double) -> Double{
+            let  rate=interestRate/100
+            let compoundInterest=pow(1.0+rate, Double(years))
+            return compoundInterest*LoanAmount
+    }
 }
-
+}
