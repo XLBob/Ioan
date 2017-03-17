@@ -17,7 +17,8 @@ class ViewController: UIViewController {
     
     @IBAction func calculate(_ sender: Any) {
         let calculate1:simpleCalculate = simpleCalculate()
-        result.text = calculate1.simpleCalcute(loanAmount: Double(loanAmount.text!)!, year: Int(year.text!)!, interest: Double(interest.text!)!)
+
+        result.text = calculate1.simpleCalcute(LoanAmount: Double(loanAmount.text!)!, years: Int (year.text!)!, interestRate: Double(interest.text!)!).description
     }
 
 
@@ -33,10 +34,12 @@ class ViewController: UIViewController {
 
 
     class simpleCalculate {
-        func simpleCalcute(loanAmount:Double,year:Int,interest:Double)->String{
-            return String(loanAmount*Double(year)*interest)
-        }
+        func simpleCalcute(LoanAmount:Double,years:Int,interestRate:Double)->Double{
+            let rate=interestRate/100
+            let interest=LoanAmount*rate*Double (years)
+            return LoanAmount+interest
     }
     
+}
 }
 
